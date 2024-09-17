@@ -81,10 +81,33 @@
             margin-top: 30px;
             font-weight: 500;
         }
+
+        /* Style for login/signup button */
+        .login-signup-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #56ab2f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-signup-btn:hover {
+            background-color: #3b8d30;
+        }
     </style>
 </head>
 
 <body>
+
+    <!-- Login/Signup button in the top-right corner -->
+    <a href="{{url_for('login')}}" class="login-signup-btn">Login/Signup</a>
+
     <div class="register_page">
         <div class="form">
             <h1>Predict Housing Prices at BR Property Agents</h1>
